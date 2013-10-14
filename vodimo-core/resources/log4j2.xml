@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+  <appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </appenders>
+  <loggers>
+    <logger name="com.vodimo.core.VodimoApplication" level="info" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>  
+    <logger name="com.vodimo.core.TransitionGenerator" level="debug" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>  
+    <logger name="com.vodimo.core.EntityNetworkGenerator" level="debug" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>         
+    <logger name="com.vodimo.core.PredictionGenerator" level="debug" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>   
+    <logger name="com.vodimo.core.util.MongoDBConnector" level="debug" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>         
+    <logger name="com.vodimo.io.HistoricalOptionDataCSVReader" level="debug" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>  
+    <logger name="com.vodimo.core.util.volatility.BlackScholesImpliedVolatility" level="info" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>               
+    <logger name="com.vodimo.coew.util.volatility.TreasuryBillRiskFreeRate" level="debug" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>         
+    <logger name="com.vodimo.core.util.ProbabilisticAttachmentHelper" level="debug" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>      
+    
+     
+    <root level="error">
+      <appender-ref ref="Console"/>
+    </root>  
+    <root level="debug">
+      <appender-ref ref="Console"/>
+    </root>  
+    <root level="info">
+      <appender-ref ref="Console"/>
+    </root>                
+  </loggers>
+</configuration>

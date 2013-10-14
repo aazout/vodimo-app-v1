@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project vodimo-core">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/vodimo.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.vodimo.core.VodimoApplication"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Applications/Eclipse/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Applications/Eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/ib_tws/IBJts/jtsclient.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/libraries/hadoop-core-0.20.203.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/mongo-2.10.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/gson-2.2.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/commons-collections-3.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/commons-lang3-3.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/super-csv-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/morphia-0.99.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/QuantLib.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/log4j-core-2.0-beta3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/log4j-api-2.0-beta3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/log4j-slf4j-impl-2.0-beta3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/lib/aws-java-sdk-1.3.27.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/aspectj-1.6/aspectjrt.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/aspectj-1.6/aspectjweaver.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/commons-codec-1.3/commons-codec-1.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/commons-logging-1.1.1/commons-logging-1.1.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/freemarker-2.3.18/freemarker-2.3.18.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/httpcomponents-client-4.1.1/httpclient-4.1.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/httpcomponents-client-4.1.1/httpcore-4.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/jackson-core-1.8/jackson-core-asl-1.8.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/jackson-mapper-1.8/jackson-mapper-asl-1.8.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/java-mail-1.4.3/mail-1.4.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/spring-3.0/spring-beans-3.0.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/spring-3.0/spring-context-3.0.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/spring-3.0/spring-core-3.0.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/stax-api-1.0.1/stax-api-1.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/aws-java-sdk/1.3.27/third-party/stax-ri-1.2.0/stax-1.2.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/aazout/Dropbox/Vodimo/Code/java/vodimo-core/lib/commons-math3-3.1.jar"/>
+        </jar>
+    </target>
+</project>
